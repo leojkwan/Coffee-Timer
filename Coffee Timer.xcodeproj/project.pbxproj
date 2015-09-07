@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9422137D1B9DF26C0027646F /* TimerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9422137C1B9DF26C0027646F /* TimerDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		942213821B9DFE3E0027646F /* TimerEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942213811B9DFE3E0027646F /* TimerEditViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		94F4212B1B991B5300F7B5D7 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4212A1B991B5300F7B5D7 /* TimerModel.swift */; settings = {ASSET_TAGS = (); }; };
 		94F6ABD11B9882A500ABB47E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F6ABD01B9882A500ABB47E /* AppDelegate.swift */; };
 		94F6ABD31B9882A500ABB47E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F6ABD21B9882A500ABB47E /* ViewController.swift */; };
 		94F6ABD61B9882A500ABB47E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F6ABD41B9882A500ABB47E /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9422137C1B9DF26C0027646F /* TimerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerDetailViewController.swift; sourceTree = "<group>"; };
+		942213811B9DFE3E0027646F /* TimerEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEditViewController.swift; sourceTree = "<group>"; };
+		94F4212A1B991B5300F7B5D7 /* TimerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerModel.swift; path = ../TimerModel.swift; sourceTree = "<group>"; };
 		94F6ABCD1B9882A500ABB47E /* Coffee Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F6ABD01B9882A500ABB47E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F6ABD21B9882A500ABB47E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,10 +80,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9422137E1B9DF3040027646F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94F4212A1B991B5300F7B5D7 /* TimerModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9422137F1B9DF31B0027646F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94F6ABD21B9882A500ABB47E /* ViewController.swift */,
+				9422137C1B9DF26C0027646F /* TimerDetailViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		942213801B9DF33A0027646F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94F6ABDC1B9882A500ABB47E /* Info.plist */,
+				94F6ABD91B9882A500ABB47E /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			path = "Coffee Timer";
+			sourceTree = "<group>";
+		};
 		94F6ABC41B9882A500ABB47E = {
 			isa = PBXGroup;
 			children = (
 				94F6ABCF1B9882A500ABB47E /* Coffee Timer */,
+				942213801B9DF33A0027646F /* Supporting Files */,
 				94F6ABE41B9882A500ABB47E /* Coffee TimerTests */,
 				94F6ABEF1B9882A500ABB47E /* Coffee TimerUITests */,
 				94F6ABCE1B9882A500ABB47E /* Products */,
@@ -98,11 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				94F6ABD01B9882A500ABB47E /* AppDelegate.swift */,
-				94F6ABD21B9882A500ABB47E /* ViewController.swift */,
 				94F6ABD41B9882A500ABB47E /* Main.storyboard */,
+				942213811B9DFE3E0027646F /* TimerEditViewController.swift */,
+				9422137F1B9DF31B0027646F /* View Controllers */,
+				9422137E1B9DF3040027646F /* Models */,
 				94F6ABD71B9882A500ABB47E /* Assets.xcassets */,
-				94F6ABD91B9882A500ABB47E /* LaunchScreen.storyboard */,
-				94F6ABDC1B9882A500ABB47E /* Info.plist */,
 			);
 			path = "Coffee Timer";
 			sourceTree = "<group>";
@@ -255,6 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F4212B1B991B5300F7B5D7 /* TimerModel.swift in Sources */,
+				942213821B9DFE3E0027646F /* TimerEditViewController.swift in Sources */,
+				9422137D1B9DF26C0027646F /* TimerDetailViewController.swift in Sources */,
 				94F6ABD31B9882A500ABB47E /* ViewController.swift in Sources */,
 				94F6ABD11B9882A500ABB47E /* AppDelegate.swift in Sources */,
 			);
@@ -483,6 +520,7 @@
 				94F6ABF71B9882A500ABB47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94F6ABF81B9882A500ABB47E /* Build configuration list for PBXNativeTarget "Coffee TimerTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +529,7 @@
 				94F6ABFA1B9882A500ABB47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94F6ABFB1B9882A500ABB47E /* Build configuration list for PBXNativeTarget "Coffee TimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +538,7 @@
 				94F6ABFD1B9882A500ABB47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
